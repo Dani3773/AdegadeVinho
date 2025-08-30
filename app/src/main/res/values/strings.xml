@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Capivino</string>
+    <string name="titulo_cliente">Detalhes do Cliente</string>
+    <string name="editar_cliente">Editar Cliente</string>
+    <string name="excluir_cliente">Excluir Cliente</string>
+    <string name="erro_inserir_cliente">Erro ao inserir cliente</string>
+    <string name="sucesso_inserir_cliente">Cliente inserido com sucesso!</string>
+    <string name="clientes_nao_encontrados">Nenhum cliente encontrado.</string>
+
+    <string name="titulo_app">Adega Capivino</string>
+    <string name="subtitulo_app">Conheça nossa história e descubra rótulos especiais com inspiração asiática.</string>
+    <string name="btn_filtro_todos">Todos</string>
+    <string name="btn_filtro_tinto">Tinto</string>
+    <string name="btn_filtro_branco">Branco</string>
+    <string name="btn_filtro_rose">Rosé</string>
+    <string name="btn_filtro_espumante">Espumante</string>
+    <string name="btn_contato">Fale Conosco</string>
+    <string name="vinho_imagem_desc">Imagem ilustrativa do vinho</string>
+
+    <string name="whatsapp_daniel">Daniel: (48) 9 8861-2447</string>
+    <string name="whatsapp_gustavo">Gustavo: (48) 9 9604-6976</string>
+    <string name="whatsapp_igor">Igor: (48) 9 9961-5935</string>
+    <string name="whatsapp_lucas">Lucas: (48) 9 9860-4034</string>
+    <string name="email_empresa">danielfelisberto3@gmail.com</string>
+
+    <string name="contato_titulo">Fale Conosco</string>
+    <string name="whatsapp_titulo">WhatsApp</string>
+    <string name="email_titulo">E-mail</string>
+    <string name="entrar_whatsapp">Entrar no WhatsApp</string>
+    <string name="enviar_email">Enviar E-mail</string>
+</resources>

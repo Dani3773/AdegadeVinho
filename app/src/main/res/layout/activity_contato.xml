@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f6f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f7f6f6"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tituloContato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contato_titulo"
+            android:textSize="28sp"
+            android:background="#f7f6f6"
+            android:textColor="@color/capivino_red_dark"
+            android:fontFamily="@font/league_spartan"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="24dp" />
+
+        <TextView
+            android:id="@+id/whatsappTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/whatsapp_titulo"
+            android:fontFamily="@font/league_spartan"
+            android:textSize="20sp"
+            android:background="#f7f6f6"
+            android:textColor="@color/capivino_red_dark"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f7f6f6"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/whatsapp_daniel"
+                style="@style/ContactButton"
+                android:backgroundTint="@color/capivino_red_dark"
+                android:text="@string/whatsapp_daniel"
+                android:onClick="openWhatsApp" />
+
+            <Button
+                android:id="@+id/whatsapp_gustavo"
+                style="@style/ContactButton"
+                android:backgroundTint="@color/capivino_red_dark"
+                android:text="@string/whatsapp_gustavo"
+                android:onClick="openWhatsApp" />
+
+            <Button
+                android:id="@+id/whatsapp_igor"
+                style="@style/ContactButton"
+                android:backgroundTint="@color/capivino_red_dark"
+                android:text="@string/whatsapp_igor"
+                android:onClick="openWhatsApp" />
+
+            <Button
+                android:id="@+id/whatsapp_lucas"
+                style="@style/ContactButton"
+                android:backgroundTint="@color/capivino_red_dark"
+                android:text="@string/whatsapp_lucas"
+                android:onClick="openWhatsApp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/emailTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_titulo"
+            android:fontFamily="@font/league_spartan"
+            android:textSize="20sp"
+            android:background="#f7f6f6"
+            android:textColor="@color/capivino_red_dark"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/email_button"
+            style="@style/ContactButton"
+            android:backgroundTint="@color/capivino_red_dark"
+            android:text="@string/enviar_email"
+            android:onClick="sendEmail" />
+    </LinearLayout>
+</ScrollView>

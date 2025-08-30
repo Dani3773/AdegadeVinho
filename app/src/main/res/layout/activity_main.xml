@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_logo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray_logo"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gray_logo"
+            android:gravity="start"
+            android:paddingBottom="8dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_user"
+                android:layout_marginEnd="12dp"
+                android:background="@color/gray_logo"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:stateListAnimator="@null"
+                app:tint="@color/capivino_red_dark" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logoCapivino"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_vinho"
+            android:contentDescription="Logo da Adega Capivino"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tituloApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capivino"
+            android:textSize="28sp"
+            android:background="@color/gray_logo"
+            android:textColor="@color/capivino_red_dark"
+            android:fontFamily="@font/league_spartan"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/subtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/league_spartan"
+            android:text="Conheça nossa história e descubra rótulos especiais com inspiração asiática."
+            android:textSize="16sp"
+            android:background="@color/gray_logo"
+            android:textColor="@color/black"
+            android:paddingBottom="24dp"
+            android:textAlignment="center"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:background="@color/gray_logo"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/filtroTipos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@color/gray_logo">
+
+                <Button
+                    android:id="@+id/btnFiltroTodos"
+                    style="@style/FiltroBotao"
+                    android:text="Todos"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnFiltroTinto"
+                    style="@style/FiltroBotao"
+                    android:text="Tinto"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnFiltroBranco"
+                    style="@style/FiltroBotao"
+                    android:text="Branco"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnFiltroRose"
+                    style="@style/FiltroBotao"
+                    android:text="Rosé"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnFiltroEspumante"
+                    style="@style/FiltroBotao"
+                    android:text="Espumante" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar vinho pelo nome:"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="4dp"
+            android:background="@color/gray_logo"/>
+
+
+        <EditText
+            android:id="@+id/editBuscarVinho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="text" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewVinhos"
+            android:layout_width="match_parent"
+            android:background="@color/gray_logo"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/btnContato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fale Conosco"
+            android:backgroundTint="@color/capivino_red_dark"
+            android:textColor="@color/white"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginTop="30dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

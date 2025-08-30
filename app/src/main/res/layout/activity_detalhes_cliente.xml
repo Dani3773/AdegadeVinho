@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_logo"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_logo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gray_logo"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Nome do Cliente"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gray_logo"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF/CNPJ:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtCnpjCpf"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="000.000.000-00"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtTelefone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="(00) 00000-0000"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="exemplo@email.com"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Responsável:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtResponsavel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Nome do responsável"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtRegiao"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtEndereco"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rua"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bairro:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtBairro"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Bairro"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Cadastro:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtData_Cadastro"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="dd/mm/aaaa"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/league_spartan"
+                android:background="@color/gray_logo" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/league_spartan"
+            android:text="Editar"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/capivino_orange"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/league_spartan"
+            android:text="Excluir"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

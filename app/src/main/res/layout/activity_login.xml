@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_logo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/gray_logo">
+
+        <TextView
+            android:id="@+id/tituloLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:text="Capivino"
+            android:fontFamily="@font/league_spartan"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/capivino_red_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/subtituloLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:text="Faça seu login"
+            android:fontFamily="@font/league_spartan"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuário:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/league_spartan"
+            android:background="@color/gray_logo"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senha:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/league_spartan"
+            android:background="@color/gray_logo"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/league_spartan"
+            android:backgroundTint="@color/capivino_red_dark"
+            android:layout_marginTop="30dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

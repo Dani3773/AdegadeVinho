@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray_logo"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Cadastro de Meta"
+        android:textSize="26sp"
+        android:background="@color/gray_logo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/league_spartan"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etNomeRepresentante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Representante"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etMesMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mês (ex: 2025-06)"
+        android:inputType="text"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etValorMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor da Meta"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSalvarMeta"
+        android:text="Salvar Meta"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/league_spartan"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

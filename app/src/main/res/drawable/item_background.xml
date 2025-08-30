@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Efeito ao clicar -->
+    <item android:drawable="@drawable/item_background_pressed" android:state_pressed="true"/>
+    <!-- Efeito normal -->
+    <item android:drawable="@drawable/item_background_normal"/>
+</selector>

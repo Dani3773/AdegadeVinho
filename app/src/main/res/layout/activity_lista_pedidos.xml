@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray_logo"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTituloPedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedidos"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:background="@color/gray_logo"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/league_spartan"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etDataInicio"
+        android:hint="Data Inicial (dd/MM/yyyy)"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDataFim"
+        android:hint="Data Final (dd/MM/yyyy)"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editNomeCliente"
+        android:hint="Cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text_primary" />
+
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnFiltrar"
+        android:text="FILTRAR"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/league_spartan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp" />
+
+    <ListView
+        android:id="@+id/listViewPedidos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_logo"
+        android:padding="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp" />
+
+</LinearLayout>

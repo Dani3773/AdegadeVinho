@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray_logo"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Relatórios de Pedidos"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:background="@color/gray_logo"
+        android:fontFamily="@font/league_spartan"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etDataInicioRel"
+        android:hint="Data Início (yyyy/MM/dd)"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etDataFimRel"
+        android:hint="Data Fim (yyyy/MM/dd)"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etClienteRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cliente"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etRegiaoRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etRepresentanteRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Representante"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnGerarRelatorio"
+        android:text="GERAR RELATÓRIO"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/league_spartan"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtTotalRelatorio"
+        android:text="Total: R$ 0,00"
+        android:textColor="@color/black"
+        android:background="@color/gray_logo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp" />
+
+    <ListView
+        android:id="@+id/listViewRelatorio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>

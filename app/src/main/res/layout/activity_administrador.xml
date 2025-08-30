@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_logo"
+    android:fillViewport="true"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/gray_logo"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAINEL ADMINISTRATIVO"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/league_spartan"
+            android:background="@color/gray_logo"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGerenciarVinhos"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Vinhos"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/league_spartan"
+                android:textSize="16sp"
+                android:paddingVertical="14dp"
+                app:iconGravity="textStart"
+                app:rippleColor="?attr/colorControlHighlight" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVerPedidos"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Pedidos"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/league_spartan"
+                android:textSize="16sp"
+                android:paddingVertical="14dp"
+                app:iconGravity="textStart"
+                app:rippleColor="?attr/colorControlHighlight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGerenciarClientes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Clientes"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/league_spartan"
+                android:textSize="16sp"
+                android:paddingVertical="14dp"
+                app:iconGravity="textStart"
+                app:rippleColor="?attr/colorControlHighlight" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGerenciarRepresentantes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Representantes"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/league_spartan"
+                android:textSize="16sp"
+                android:paddingVertical="14dp"
+                app:iconGravity="textStart"
+                app:rippleColor="?attr/colorControlHighlight" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCadastroMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Metas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/league_spartan"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="12dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRelatorios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relatórios"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/league_spartan"
+            android:textSize="16sp"
+            android:paddingVertical="14dp"
+            android:layout_marginBottom="12dp"
+            app:iconGravity="textStart"
+            app:rippleColor="?attr/colorControlHighlight" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSairAdmin"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Sair"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/alert_error"
+            android:fontFamily="@font/league_spartan"
+            android:textSize="16sp"
+            android:paddingVertical="14dp"
+            android:layout_marginTop="32dp"
+            app:cornerRadius="16dp"
+            app:iconGravity="textStart"
+            app:rippleColor="?attr/colorControlHighlight" />
+    </LinearLayout>
+</ScrollView>

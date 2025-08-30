@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/gray_logo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_logo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gray_logo"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Nome do Representante"
+                android:textSize="25sp"
+                android:background="@color/gray_logo"
+                android:fontFamily="@font/league_spartan"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_logo"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtTelefone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Telefone: (00) 00000-0000"
+                android:textSize="25sp"
+                android:background="@color/gray_logo"
+                android:fontFamily="@font/league_spartan"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gray_logo"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="20sp"
+                android:background="@color/gray_logo"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/gray_logo"
+                android:layout_height="wrap_content"
+                android:text="E-mail: exemplo@email.com"
+                android:textSize="25sp"
+                android:fontFamily="@font/league_spartan"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/gray_logo"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEP:"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtEndereco"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/gray_logo"
+                android:layout_height="wrap_content"
+                android:text="Endereço: CEP"
+                android:textSize="25sp"
+                android:fontFamily="@font/league_spartan"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gray_logo"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cpf ou Cnpj"
+                android:background="@color/gray_logo"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/league_spartan"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtCpf"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/gray_logo"
+                android:layout_height="wrap_content"
+                android:text="CPF/CNPJ: 000.000.000-00"
+                android:textSize="25sp"
+                android:fontFamily="@font/league_spartan"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:textStyle="bold"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/capivino_orange"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:textStyle="bold"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

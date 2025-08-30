@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_logo">
+
+    <ImageView
+        android:id="@+id/logoCapivino"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_vinho"
+        android:contentDescription="Logo da Adega Capivino"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtTituloEmissoes"
+        android:text="Emissões realizadas:"
+        android:textSize="20sp"
+        android:background="@color/gray_logo"
+        android:textColor="@color/capivino_red_dark"
+        android:fontFamily="@font/league_spartan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" />
+
+    <ListView
+        android:id="@+id/listViewEmissoes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:padding="15dp"
+        android:background="@drawable/listview_shadow"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:id="@+id/btnEmitirPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emitir Pedido"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/league_spartan"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/capivino_red_dark"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnVisualizarClientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Visualizar Clientes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/league_spartan"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/capivino_red_dark"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnVisualizarProdutos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Visualizar Produtos"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/league_spartan"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/capivino_red_dark"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVerMetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metas"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/league_spartan"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/capivino_red_dark"
+        android:layout_marginBottom="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnSair"
+        android:text="Sair"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/league_spartan"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/capivino_red_dark"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
